@@ -119,7 +119,7 @@ a {
 #languages > section,
 #interests > section,
 #profiles > section,
-#contacts {
+#contacts{
   display: flex;
   flex-wrap: wrap;
 }
@@ -237,7 +237,7 @@ a {
 }
 #contacts .item {
   flex: 1;
-  margin-bottom: 0;
+  margin-bottom: 2;
 }
 #profiles, #skills {
   overflow: hidden;
@@ -373,62 +373,49 @@ a {
   margin: 1cm 1.4cm;
 }
 
-	</style>
+</style>
 
-	</head>
-	<body>
+</head>
+<body>
 
-	<div id="resume">
-			<h1>Colleen Venhuis</h1>
-			<h2>Software Developer</h2>
-		  <div class="summary">
-		    <p>I am a fresh University of Alberta graduate seeking employment within Canada in the computing science industry! Some of the industries I&#x27;m interested in include startup companies, mobile &amp; web applications, and video game development. User Interfaces are the most interesting aspect for me, as I like finding new ways for people to communicate with technology.</p>
+  <div id="resume">
+	<h1>Colleen Venhuis</h1>
+	<h2>Software Developer</h2>
+	<div class="summary">
+	  <p>I am a fresh University of Alberta graduate seeking employment within Canada in the computing science industry! Some of the industries I&#x27;m interested in include startup companies, mobile &amp; web applications, and video game development. User Interfaces are the most interesting aspect for me, as I like finding new ways for people to communicate with technology.</p>
+	</div>
+	<section id="contacts">
+	    <div class="location item">
+		  <div class="block">
+		    <span class="city">Edmonton</span>
 		  </div>
-    <section id="education">
-    	<h3>Education</h3>
-    	<section class="item">
-        <div class="row">
-          <div class="institution">
-            University of Alberta
+	    </div>		
+	    <div class="contacts item">
+		  <div class="block">
+		    <span class="email">venhuis@ualberta.ca</span>
+		  </div>
+	    </div>
+    </section>	
+	<section id="profiles">
+      <h3>Profiles</h3>
+      <section>
+        <div class="item">
+          <div class="network">
+            LinkedIn
           </div>
-          <div class="date">
-            <span class="startDate">
-              September 2012
-            </span>
-            <span class="endDate">
-              - April 2018
-            </span>
+          <div class="url">
+            <a href="https://www.linkedin.com/in/colleen-venhuis/">Colleen Venhuis</a>
           </div>
         </div>
-        <div class="row education-sub-info">
-          <span class="area">
-            Computing Science with Mathematics minor
-          </span>
-          <span class="studyType">
-            Bachelor of Science
-          </span>
+        <div class="item">
+          <div class="network">
+            GitHub
+          </div>
+          <div class="url">
+            <a href="https://github.com/cjvenhuis">cjvenhuis</a>
+          </div>
         </div>
-    		<ul class="courses">
-    			<li>Introduction to Software Engineering</li>
-    			<li>Introduction to File and Database Management</li>
-    			<li>Computer Organization and Architecture I</li>
-    			<li>Advanced Games Programming</li>
-    			<li>Computer Networks</li>
-    			<li>Operating System Concepts</li>
-    			<li>Introduction to the Foundations of Computation I &amp; II</li>
-    			<li>Introduction to Digital Image Processing</li>
-    			<li>Elementary &amp; Intermediate Calculus I &amp; II</li>
-    			<li>Linear Algebra I</li>
-    			<li>Introduction to Statistics</li>
-    			<li>Introduction to Discrete Mathematics</li>
-    			<li>Introduction to Ring Theory</li>
-    			<li>Graph Theory</li>
-    			<li>Elementary Number Theory</li>
-    			<li>Geometry</li>
-    			<li>Projective and Inversive Geometries</li>
-    			<li>Intermediate &amp; Advanced German I &amp; II</li>
-    		</ul>
-    	</section>
+      </section>
     </section>
 		<section id="work">
 			<h3>Work</h3>
@@ -436,7 +423,7 @@ a {
 		    <div class="item">
 		      <div class="row">
 		        <div class="name">
-		          University of Alberta
+		          Teaching Assistant
 		        </div>
 		        <div class="date">
 		          <span class="startDate">
@@ -448,12 +435,12 @@ a {
 		        </div>
 		      </div>
 		      <div class="position">
-		        Teaching Assistant
+		        University of Alberta
 		      </div>
 		      <div class="summary">
 		        <p>Lab TA for CMPUT 174: Introduction to the Foundations of Computation I. This role was very enjoyable and allowed for great personal growth. Working with students taught me more about how others think and approach the same problem with different viable solutions.</p>
 		      </div>
-		      <h5>Responsibilities:</h5>
+		      <h5>Highlights:</h5>
 		      <ul class="highlights">
 		        <li>Facilitated and supervised labs as students worked on lab assignments</li>
 		        <li>Provided advice and feedback on the basics of game design in python</li>
@@ -464,7 +451,7 @@ a {
 		    <div class="item">
 		      <div class="row">
 		        <div class="name">
-		          University of Alberta
+		          MOOC Subject Expert
 		        </div>
 		        <div class="date">
 		          <span class="startDate">
@@ -476,12 +463,12 @@ a {
 		        </div>
 		      </div>
 		      <div class="position">
-		        MOOC Subject Expert
+		        University of Alberta
 		      </div>
 		      <div class="summary">
 		        <p>Worked under a professor to help produce a series of online Software Design and Architecture courses. I was given the chance to work closely with a coworker, learn the value of pair programming, and the challenges of finishing a project.</p>
 		      </div>
-		      <h5>Responsibilities:</h5>
+		      <h5>Highlights:</h5>
 		      <ul class="highlights">
 		        <li>Developed base Android Studio application code for tutorials and assignments</li>
 		        <li>Designed assignment guidelines, example diagrams, and marking schemes</li>
@@ -533,28 +520,52 @@ a {
 		    </div>
 		  </section>
 		</section>
-		<section id="awards">
-			<h3>Awards</h3>
-		  <section>
-		    <div class="item">
-		      <div class="row">
-		        <div class="date">
-		        </div>
-		      </div>
-		    </div>
-		  </section>
-		</section>
-		<section id="publications">
-			<h3>Publications</h3>
-		  <section>
-		    <div class="item">
-		      <div class="row">
-		        <div class="date">
-		        </div>
-		      </div>
-		    </div>
-		  </section>
-		</section>
+    <section id="education">
+    	<h3>Education</h3>
+    	<section class="item">
+        <div class="row">
+          <div class="institution">
+            University of Alberta
+          </div>
+          <div class="date">
+            <span class="startDate">
+              September 2012
+            </span>
+            <span class="endDate">
+              - April 2018
+            </span>
+          </div>
+        </div>
+        <div class="row education-sub-info">
+          <span class="area">
+            Computing Science with Mathematics minor
+          </span>
+          <span class="studyType">
+            Bachelor of Science
+          </span>
+        </div>
+    		<ul class="courses">
+    			<li>Introduction to Software Engineering</li>
+    			<li>Introduction to File and Database Management</li>
+    			<li>Computer Organization and Architecture I</li>
+    			<li>Advanced Games Programming</li>
+    			<li>Computer Networks</li>
+    			<li>Operating System Concepts</li>
+    			<li>Introduction to the Foundations of Computation I &amp; II</li>
+    			<li>Introduction to Digital Image Processing</li>
+    			<li>Elementary &amp; Intermediate Calculus I &amp; II</li>
+    			<li>Linear Algebra I</li>
+    			<li>Introduction to Statistics</li>
+    			<li>Introduction to Discrete Mathematics</li>
+    			<li>Introduction to Ring Theory</li>
+    			<li>Graph Theory</li>
+    			<li>Elementary Number Theory</li>
+    			<li>Geometry</li>
+    			<li>Projective and Inversive Geometries</li>
+    			<li>Intermediate &amp; Advanced German I &amp; II</li>
+    		</ul>
+    	</section>
+    </section>
 		<section id="skills">
 			<h3>Skills</h3>
 		  <section>
@@ -628,6 +639,22 @@ a {
 		    </div>
 		  </section>
 		</section>
+		<section id="interests">
+			<h3>Interests</h3>
+		  <section>
+		      <div class="name">
+		        User Interfaces
+		      </div>
+		      <div class="name">
+		        Astronomy
+		      </div>
+		      <div class="name">
+		        Games
+		      </div>
+		      <div class="name">
+		        Swimming
+		      </div>
+		  </section>
 		<section id="languages">
 			<h3>Languages</h3>
 		  <section>
@@ -649,77 +676,6 @@ a {
 		    </div>
 		  </section>
 		</section>
-		<section id="interests">
-			<h3>Interests</h3>
-		  <section>
-		      <div class="name">
-		        User Interfaces
-		      </div>
-		      <div class="name">
-		        Astronomy
-		      </div>
-		      <div class="name">
-		        Games
-		      </div>
-		      <div class="name">
-		        Swimming
-		      </div>
-		  </section>
-		</section>
-		<section id="references">
-			<h3>References</h3>
-		  <section>
-		    <div class="item">
-		    </div>
-		  </section>
-		</section>
-    <section id="profiles">
-    	<h3>Profiles</h3>
-      <section>
-        <div class="item">
-          <div class="network">
-            LinkedIn
-          </div>
-          <div class="url">
-            <a href="https://www.linkedin.com/in/colleen-venhuis/">Colleen Venhuis</a>
-          </div>
-        </div>
-        <div class="item">
-          <div class="network">
-            GitHub
-          </div>
-          <div class="url">
-            <a href="https://github.com/cjvenhuis">cjvenhuis</a>
-          </div>
-        </div>
-      </section>
-    </section>
-		<section id="contacts">
-		  <div class="location item">
-		    <div class="block">
-		      
-		      <span class="city">Edmonton</span>
-		      
-		    </div>
-		    <div class="block">
-		      
-		    </div>
-		  </div>
-		
-		  <div class="contacts item">
-		    <div class="block">
-		      <span class="email">venhuis@ualberta.ca</span>
-		    </div>
-		    <div class="block">
-		      
-		    </div>
-		  </div>
-		
-		  <div class="site item">
-		    <div class="block">
-		      
-		    </div>
-		  </div>
 		</section>
 	</body>
 </html>
