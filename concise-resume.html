@@ -1,0 +1,1268 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+	<title>Colleen Venhuis</title>
+
+	<style>
+		/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+		body {
+	background: #fafafa;
+	font: 15px "Open Sans", sans-serif;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", sans-serif;
+	margin-bottom: 0.1rem;
+}
+
+em {
+	color: #999;
+}
+p {
+	line-height: 1.4;
+	margin: 0.5rem 0;
+}
+ul {
+	margin-bottom: 0;
+	list-style-type: '— ';
+}
+section {
+	margin-bottom: 1rem;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+.cross-heading {
+	width: 100%;
+	margin-top: 1.25em;
+	text-align: center;
+}
+
+.cross-heading > p {
+	margin: 0;
+	font-size:1.4rem;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+
+	background: #fafafa;
+	padding: 0 0.75em;
+}
+
+.cross-heading::after {
+	height: 1px;
+	content: "";
+	background: #aaa;
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: -100;
+	top: -1em;
+}
+
+.item {
+	margin-bottom: 1em;
+}
+
+.name {
+	font-size: 1.1rem;
+}
+
+.position, .title {
+	font-size: 1.3rem;
+}
+
+.section-container {
+	padding: 0.25em;
+	margin: 0.5em;
+	margin-bottom: 1em;
+	border-left-style: solid;
+	border-color: rgba(170, 170, 170, 0); /* #aaa0 */
+	border-width: 1px;
+}
+
+.section-container-hover {
+	border-color: rgba(170, 170, 170, 255);
+}
+
+.summary-section-dropdown-indicator {
+	font-family: FontAwesome;
+	top: -0.25rem;
+	position: relative;
+	left: 50%;
+	margin-left: -0.5rem;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+@keyframes bounce {
+	 0% {
+		 top: -0.5rem;
+	 }
+	 50% {
+		 top: -0.1rem;
+	 }
+	 100% {
+		 top: -0.5rem;
+	 }
+}
+
+.summary-section-dropdown-hinter {
+	font-family: FontAwesome;
+	top: -0.25rem;
+	position: relative;
+	left: 50%;
+	font-size: 1.2rem;
+	margin-left: -0.6rem; /* 1/2 of font-size */
+	display: block;
+	width: 0;
+	height: 0;
+
+	animation: bounce 1.3s infinite;
+	/*animation-timing-function: ease-in-out;*/
+}
+
+.concise-full-switch {
+	text-align: center;
+	font-size: 0.7rem;
+
+	margin: 0;
+	margin-top: 0.3rem;
+}
+
+.concise-full-switch a {
+	padding: 0.1rem;
+}
+
+#header-container {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#header {
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #aaa;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 	0.75rem;
+	margin-top: 		0.75rem;
+	padding: 0.5em;
+}
+#header h1 {
+	font-size: 2.7em;
+}
+#header h1, #header h2, #header h3, #header h4 {
+	padding: 0;
+	margin: 0.1rem;
+}
+#resume {
+	margin: 0 auto;
+	/*max-width: 60%;*/
+	/*padding: 0.25rem;*/
+}
+
+#basics {
+	margin-bottom: -10px;
+}
+#basics h3 {
+	margin-top: 1.5em;
+}
+#basics-header-container {
+	overflow:hidden;
+}
+#basics .full-section {
+	margin: 0;
+}
+#basics .summary {
+	text-align: center;
+}
+#contact {
+	float: left;
+	text-align: left;
+}
+#location {
+	float: right;
+	text-align: right;
+	border-left-style: none;
+	border-right-style: solid;
+}
+#contact, #location {
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+#profiles,
+#skills {
+	overflow: hidden;
+	margin: 0.5rem 0;
+}
+#profiles .item,
+#skills .item {
+	float: left;
+	margin: 0.5rem 0.25rem;
+}
+
+#skills .item {
+	width: 33%;
+}
+
+.keywords {
+	margin: 0.1rem 0.25rem;
+}
+
+.keyword {
+	padding: 0.15rem 0.6rem;
+	margin: 0.2rem 0.1rem;
+	display: inline-block;
+
+	color: #aaa;
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #aaa;
+}
+
+.reference {
+	font-style: italic;
+	font-size-adjust: 0.48;
+}
+
+#footer {
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	font-size: smaller;
+}
+
+@media only screen and (max-width: 992px) {
+	#contact {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 0.25rem;
+	}
+
+	#location {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 0.25rem;
+		border-left-style: solid;
+		border-right-style: none;
+	}
+
+	#skills .item {
+		width: 100%;
+	}
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<div class=".container-fluid">
+		<div class="concise-full-switch">
+			<a href="#" id="concise-activate" title="Hide detailed information until hovered over">Concise</a>
+			|
+			<a href="#" id="full-activate" title="Show all information">Full</a>
+		</div>
+
+		<div id="header-container" class="col-xs-10 col-lg-7">
+			<div id="header">
+				  <h1>Colleen Venhuis</h1>
+				  <h3>Software Developer</h3>
+			</div>
+		</div>
+
+		<div id="resume" class="col-xs-10 col-lg-7">
+				<section id="basics">
+					<div id="basics-header-container">
+						<div id="contact" class="section-container no-hinter-section">
+							<div class="summary-section">
+									<div class="email">
+										<a href="mailto:venhuis@ualberta.ca">venhuis@ualberta.ca</a>
+									</div>
+							</div>
+							<div class="full-section">
+							</div>
+						</div>
+						<div id="location" class="section-container no-hinter-section">
+							<div class="summary-section">
+								<div class="countryCode">
+									AB
+								</div>
+							</div>
+							<div class="full-section">
+									<div class="city">
+										Edmonton
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="summary">
+						<p><em>I am a fresh University of Alberta graduate seeking employment within Canada in the computing science industry! Some of the industries I'm interested in include startup companies, mobile & web applications, and video game development. User Interfaces are the most interesting aspect for me, as I like finding new ways for people to communicate with technology.</em></p>
+					</div>
+					<section id="profiles">
+						<span class="item">
+								<icon title="LinkedIn" class="fa fa-linkedin"></icon>
+								<!-- <strong class="network">
+									LinkedIn
+								</strong> -->
+								<span class="username">
+									<a href="https://www.linkedin.com/in/colleen-venhuis/">Colleen Venhuis</a>
+								</span>
+						</span>
+						<span class="item">
+								<icon title="GitHub" class="fa fa-github"></icon>
+								<!-- <strong class="network">
+									GitHub
+								</strong> -->
+								<span class="username">
+									<a href="https://github.com/cjvenhuis">cjvenhuis</a>
+								</span>
+						</span>
+					</section>
+				</section>
+			<section id="work">
+				<div class="cross-heading"><p>Work</p></div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="position">
+							Teaching Assistant
+						</div>
+						<h3 class="name">
+							University of Alberta
+						</h3>
+						  <div class="date" title=" Aug 31 2017 — Dec 30 2017 ">
+						    <icon class="fa fa-calendar" aria-hidden="true"></icon>
+						    <strong>4 months</strong>
+						    <em>Started Aug 2017</em>
+						  </div>
+					</div>
+					<div class="full-section">
+						<div class="summary">
+							<p><em>Lab TA for CMPUT 174: Introduction to the Foundations of Computation I. This role was very enjoyable and allowed for great personal growth. Working with students taught me more about how others think and approach the same problem with different viable solutions.</em></p>
+						</div>
+						<ul class="highlights">
+							<li>Facilitated and supervised labs as students worked on lab assignments</li>
+							<li>Provided advice and feedback on the basics of game design in python</li>
+							<li>Evaluated group assignment demonstrations and graded results</li>
+							<li>Proctored class examinations</li>
+						</ul>
+					</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="position">
+							MOOC Subject Expert
+						</div>
+						<h3 class="name">
+							University of Alberta
+						</h3>
+						  <div class="date" title=" Jul 09 2017 — Sep 29 2017 ">
+						    <icon class="fa fa-calendar" aria-hidden="true"></icon>
+						    <strong>2 months</strong>
+						    <em>Started Jul 2017</em>
+						  </div>
+					</div>
+					<div class="full-section">
+						<div class="summary">
+							<p><em>Worked under a professor to help produce a series of online Software Design and Architecture courses. I was given the chance to work closely with a coworker, learn the value of pair programming, and the challenges of finishing a project.</em></p>
+						</div>
+						<ul class="highlights">
+							<li>Developed base Android Studio application code for tutorials and assignments</li>
+							<li>Designed assignment guidelines, example diagrams, and marking schemes</li>
+							<li>Uploaded and formatted assignments to Coursera's platform for review and publication</li>
+							<li>Addressed course beta tester comments and concerns</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="volunteer">
+				<div class="cross-heading"><p>Volunteer</p></div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="position">
+							President and Vice President
+						</div>
+						<h3 class="name">
+							Ada's Team
+						</h3>
+						  <div class="date" title=" Apr 30 2017 — Apr 29 2018 ">
+						    <icon class="fa fa-calendar" aria-hidden="true"></icon>
+						    <strong>11 months</strong>
+						    <em>Started Apr 2017</em>
+						  </div>
+						<div class="website">
+							<a href="http://www.adasteam.ca/">www.adasteam.ca</a>
+						</div>
+					</div>
+					<div class="full-section">
+						<div class="summary">
+							<p>Ada's Team promotes diversity and inclusion in the Department of Computing Science. They host numerous events, attend conferences, and provide many resources for students regardless of their background. As Vice President and later President of Ada's Team, I strove to make sure all these opportunities were available to everyone and ensured my team was able to grow and communicate together.</p>
+						</div>
+						<ul class="highlights">
+							<li>Acted as lead chair of executive and general meetings</li>
+							<li>Communicated with the Computing Science Department and peer student groups</li>
+							<li>Priorotized tasks and managed team workload</li>
+							<li>Organized and promoted student, faculty, and industry related events</li>
+							<li>Managed website blog and social media pages</li>
+							<li>Hosted monthly Coffee && Code events</li>
+							<li>Hosted and lead science activities introducing 3D Modelling using TinkerCad</li>
+							<li>Hosted WISEST Summer Lunches for high school students</li>
+							<li>Held office hours in Ada's Base for peer networking and tutoring</li>
+							<li>Encouraged growth and provided a welcoming environment in the Computing Science Department</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="education">
+				<div class="cross-heading"><p>Education</p></div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="institution">
+							<icon class="fa fa-graduation-cap" aria-hidden="true"></icon>
+							University of Alberta
+						</div>
+						  <div class="date">
+						    <icon class="fa fa-calendar" aria-hidden="true"></icon>
+						      Aug 31 2012 — Apr 29 2018
+						  </div>
+						<div class="area">
+							<span class="studyType">
+								<strong>Bachelor of Science</strong>
+							</span>
+							(Computing Science with Mathematics minor)
+						</div>
+					</div>
+					<div class="full-section">
+							<div class="courses">
+							<em>Courses</em>
+							<ul>
+								<li>Introduction to Software Engineering</li>
+								<li>Introduction to File and Database Management</li>
+								<li>Computer Organization and Architecture I</li>
+								<li>Advanced Games Programming</li>
+								<li>Computer Networks</li>
+								<li>Operating System Concepts</li>
+								<li>Introduction to the Foundations of Computation I &amp; II</li>
+								<li>Introduction to Digital Image Processing</li>
+								<li>Elementary &amp; Intermediate Calculus I &amp; II</li>
+								<li>Linear Algebra I</li>
+								<li>Introduction to Statistics</li>
+								<li>Introduction to Discrete Mathematics</li>
+								<li>Introduction to Ring Theory</li>
+								<li>Graph Theory</li>
+								<li>Elementary Number Theory</li>
+								<li>Geometry</li>
+								<li>Projective and Inversive Geometries</li>
+								<li>Intermediate &amp; Advanced German I &amp; II</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="awards">
+				<div class="cross-heading"><p>Awards</p></div>
+				<div class="item section-container">
+					<div class="summary-section">
+					</div>
+					<div class="full-section">
+					</div>
+				</div>
+			</section>
+			<section id="publications">
+				<p class="cross-heading">Publications</p class="cross-heading">
+				<div class="item section-container">
+						<div class="summary-section">
+					</div>
+					<div class="full-section">
+					</div>
+				</div>
+			</section>
+			<section id="skills">
+				<div class="cross-heading"><p>Skills</p></div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="skill-name">
+							Programming Languages
+						</div>
+						<div class="level">
+							<em>Intermediate</em>
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">Python</span>
+							      <span class="keyword col-xs-1">Java</span>
+							      <span class="keyword col-xs-1">C++</span>
+							      <span class="keyword col-xs-1">C</span>
+							      <span class="keyword col-xs-1">MIPS Assembly</span>
+							  </div>
+						</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="skill-name">
+							Databases
+						</div>
+						<div class="level">
+							<em>Beginner</em>
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">MySQL</span>
+							      <span class="keyword col-xs-1">SQLLite</span>
+							  </div>
+						</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="skill-name">
+							Windows Related Technologies
+						</div>
+						<div class="level">
+							<em>Intermediate</em>
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">Android Studio</span>
+							      <span class="keyword col-xs-1">GitHub Desktop App</span>
+							      <span class="keyword col-xs-1">Windows PowerShell</span>
+							  </div>
+						</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="skill-name">
+							Linux Related Technologies
+						</div>
+						<div class="level">
+							<em>Intermediate</em>
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">Ubuntu</span>
+							      <span class="keyword col-xs-1">git</span>
+							      <span class="keyword col-xs-1">bash</span>
+							  </div>
+						</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="skill-name">
+							Other Technologies
+						</div>
+						<div class="level">
+							<em>Beginner</em>
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">TinkerCad</span>
+							      <span class="keyword col-xs-1">Node.js</span>
+							      <span class="keyword col-xs-1">NumPy</span>
+							      <span class="keyword col-xs-1">MatPlotLib</span>
+							      <span class="keyword col-xs-1">OpenCV</span>
+							  </div>
+						</div>
+				</div>
+			</section>
+			<section id="languages">
+				<div class="cross-heading"><p>Languages</p></div>
+				<div class="item">
+					<div class="language">
+						English
+					</div>
+					<div class="fluency">
+						<em>Native</em>
+					</div>
+				</div>
+				<div class="item">
+					<div class="language">
+						German
+					</div>
+					<div class="fluency">
+						<em>Elementary</em>
+					</div>
+				</div>
+			</section>
+			<section id="interests">
+				<div class="cross-heading"><p>Interests</p></div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="title">
+							User Interfaces
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">Usability</span>
+							      <span class="keyword col-xs-1">Design</span>
+							      <span class="keyword col-xs-1">Purpose</span>
+							      <span class="keyword col-xs-1">Liability</span>
+							      <span class="keyword col-xs-1">Ethics</span>
+							  </div>
+						</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="title">
+							Astronomy
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">Planets</span>
+							      <span class="keyword col-xs-1">Stars</span>
+							      <span class="keyword col-xs-1">Formation</span>
+							      <span class="keyword col-xs-1">Space Exploration</span>
+							      <span class="keyword col-xs-1">Life Beyond Earth</span>
+							  </div>
+						</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="title">
+							Games
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">RPG</span>
+							      <span class="keyword col-xs-1">MMO</span>
+							      <span class="keyword col-xs-1">Board Games</span>
+							      <span class="keyword col-xs-1">Video Games</span>
+							  </div>
+						</div>
+				</div>
+				<div class="item section-container">
+					<div class="summary-section">
+						<div class="title">
+							Swimming
+						</div>
+					</div>
+						<div class="full-section">
+							  <div class="keywords container">
+							      <span class="keyword col-xs-1">Beach</span>
+							      <span class="keyword col-xs-1">Outdoors</span>
+							      <span class="keyword col-xs-1">Summer</span>
+							  </div>
+						</div>
+				</div>
+			</section>
+			<section id="references">
+				<div class="cross-heading"><p>References</p></div>
+				<div class="item">
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div id="footer">
+		<em><a href="https://www.npmjs.com/package/jsonresume-theme-concise">Theme</a> for <a href="https://jsonresume.org/">JSON Resume</a></em>
+	</div>
+	</body>
+
+	<script>
+		// set to true to remove all interactivity and just display all info
+		var SHOW_FULL_SECTIONS = false;
+
+		// how long a user must hover over a summary before it expands
+		var HOVER_ACTIVATE_TIME = 600; // ms
+
+		// for dynamic changing of showing everything
+		var full_mode = true;
+
+		var hinter_removed = false;
+
+		var otherSlidingDownTimeout = null;
+		revealSection = function(activateTimeout) {
+			$(this).addClass("section-container-hover");
+			var $dropdownIndicator = $(this).children(".summary-section-dropdown-indicator");
+			$dropdownIndicator.text("\uf107"); // down arrow
+
+			if (otherSlidingDownTimeout === null) {
+				var $fullSection = $(this).children(".full-section");
+				otherSlidingDownTimeout = window.setTimeout(function() {
+					$fullSection.slideDown("med", function() {
+						window.clearTimeout(otherSlidingDownTimeout);
+						otherSlidingDownTimeout = null;
+
+						// only CHANGE it from a down arrow
+						// (the whole action may have been cancelled and we don't want to re-add)
+						if ($dropdownIndicator.text() !== "") {
+							$dropdownIndicator.text("\uf106"); // up arrow
+						}
+					});
+
+				}, activateTimeout);
+			} else {
+				window.clearTimeout(otherSlidingDownTimeout);
+				otherSlidingDownTimeout = null;
+			}
+		}
+
+		hideSection = function() {
+			$(this).removeClass("section-container-hover");
+			// instead of emptying, put in \uf107 if we want to always show indicators
+			$(this).children(".summary-section-dropdown-indicator").text("");
+
+			$(this).children(".full-section").slideUp("med");
+			window.clearTimeout(otherSlidingDownTimeout);
+			otherSlidingDownTimeout = null;
+		}
+
+		set_full_mode = function() {
+			$("#full-activate").css("text-decoration", "underline");
+			$("#concise-activate").css("text-decoration", "none");
+
+			// disable handlers and show everything
+			$(".section-container").off("mouseenter mouseleave");
+			$(".section-container").off("blur");
+			$(".section-container").off("click");
+
+			$(".summary-section-dropdown-hinter").hide();
+			$(".full-section").show();
+			$(".summary-section").show();
+		}
+
+		set_concise_mode = function() {
+			$("#concise-activate").css("text-decoration", "underline");
+			$("#full-activate").css("text-decoration", "none");
+
+			// make sure to re-show and re-activate hover option on hinter
+			// (never show again once removed; i.e. hovered over once)
+			$(".summary-section-dropdown-hinter").show();
+			if (!hinter_removed) {
+				$(".section-container").not(".no-hinter-section").first()
+				.hover(() => {
+					hinter_removed = true;
+					$(".summary-section-dropdown-hinter").remove();
+				});
+			}
+
+			// desktop reveal method
+			$(".section-container").hover(function() {
+				revealSection.apply(this, [HOVER_ACTIVATE_TIME]);
+			}, hideSection);
+
+			// mobile reveal method
+			$(".section-container").on("blur", hideSection);
+			$(".section-container").on("click", function() {
+				// blur all those EXCEPT this one
+				var current = $(this);
+				$(".section-container").filter(function() {
+					return !$(this).is(current);
+				}).blur();
+
+				revealSection.apply(this, [0]);
+			});
+
+			$(".full-section").hide();
+			$(".summary-section").show();
+		}
+
+		if (!SHOW_FULL_SECTIONS) {
+			// toggle handlers
+			$("#concise-activate").click(set_concise_mode);
+			$("#full-activate").click(set_full_mode);
+
+			// add a hinter to the dropdown function that disappears on first parent hover
+			$(".section-container").not(".no-hinter-section").first()
+			.append("<span class='summary-section-dropdown-hinter'>\uf107</span>")
+
+			// instead of being empty, put in \uf107 if we want to always show indicators
+			$(".section-container").append(
+				"<span class='summary-section-dropdown-indicator'></span>");
+
+			$(".full-section").hide();
+			$(".summary-section").show();
+
+			// set concise by default
+			set_concise_mode()
+		} else {
+			$(".concise-full-switch").hide();
+			$(".full-section").show();
+			$(".summary-section").show();
+		}
+
+	</script>
+</html>
