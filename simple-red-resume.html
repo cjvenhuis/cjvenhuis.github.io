@@ -1,0 +1,725 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+
+	<title>Colleen Venhuis</title>
+
+	<style>
+	body {
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
+  color: #000;
+  line-height: 1.4;
+  margin: 50px 0 60px;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1em;
+  margin: 0;
+}
+h1 {
+  color: #FF1717;
+  font-size: 2.4em;
+  font-weight: 900;
+}
+h2 {
+  margin-top: 10px;
+  font-weight: 900;
+}
+h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+h4 {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+p {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.8em;
+  opacity: 0.8;
+}
+em {
+  opacity: 0.5;
+}
+p {
+  line-height: 1.4;
+}
+ul {
+  margin-bottom: 0;
+}
+section, #skills .item {
+  margin-bottom: 2em;
+}
+section > h3 {
+  width: 25%;
+  float: left;
+  color: #FF1717;
+}
+section > section {
+  width: 75%;
+  float: left;
+}
+blockquote {
+  margin: 0;
+  margin-bottom: 1em;
+}
+a {
+  font-size: 0.9em;
+  font-weight: 700;
+  opacity: 0.5;
+  color: #000;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+}
+.item {
+  margin-bottom: 3em;
+}
+.row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#resume {
+  margin: 0 auto;
+  /*max-width: 595px;*/
+  max-width: 690px;
+  padding: 0 50px;
+}
+#resume > section {
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+#resume > section:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.summary {
+  margin: 10px 0 50px;
+  font-style: italic;
+}
+#skills .keywords,
+#languages > section,
+#interests > section,
+#profiles > section,
+#contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+#education .institution,
+#work .name,
+#volunteer .name,
+#awards .title,
+#publications .name {
+  font-size: 1em;
+  font-weight: 900;
+  width: 65%;
+  float: left;
+}
+#education .area,
+#education .studyType {
+  font-size: 0.9em;
+  font-weight: 400;
+  font-style: italic
+}
+#education .date,
+#work .date,
+#volunteer .date,
+#awards .date,
+#publications .date {
+  font-size: 0.7em;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  width: 35%;
+  float: right;
+  text-align: right;
+}
+#education .education-sub-info {
+  margin-top: 10px;
+}
+#education .education-sub-info span:not(:last-child):after {
+  margin: 0 5px;
+  content: "/";
+}
+#work .website,
+#work .position,
+#work .highlights,
+#work .item > h5,
+#volunteer .website,
+#volunteer .position,
+#volunteer .highlights,
+#volunteer .item > h5,
+#awards .awarder,
+#publications .website,
+#publications .publisher,
+#skills .item .level,
+#languages .item .fluency {
+  font-size: 0.9em;
+}
+#work .summary,
+#awards .summary,
+#volunteer .summary,
+#publications .summary {
+  font-style: normal;
+  font-size: 0.8em;
+  margin: 10px 0;
+}
+#work .position,
+#volunteer .position,
+#awards .awarder,
+#publications .publisher {
+  margin-top: 10px;
+  font-style: italic;
+}
+#work .highlights,
+#volunteer .highlights {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#work .highlights li,
+#volunteer .highlights li {
+  font-size: 0.9em;
+  width: 45%;
+  margin-right: 5%;
+}
+#skills .keywords {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+#skills .keywords li {
+  margin-right: 20px;
+}
+#skills .item .name,
+#languages .item .language,
+#profiles .item .network {
+  font-weight: 900;
+}
+#languages .item,
+#profiles .item {
+  width: 33.3%;
+  margin-bottom: 10px;
+}
+#profiles .item .network {
+  font-size: 0.9em;
+}
+#profiles .item .url {
+  font-size: 0.8em;
+}
+#interests .name {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-right: 7px;
+}
+#interests .name:not(:last-child):after {
+  content: ',';
+  margin-left: -3px;
+}
+#contacts .item {
+  flex: 1;
+  margin-bottom: 0;
+}
+#profiles, #skills {
+  overflow: hidden;
+}
+#contacts {
+  margin-left: 25%;
+  font-size: 0.8em;
+}
+#contacts .site {
+  align-self: flex-end;
+  text-align: right;
+}
+#contacts .site a {
+  color: #FF1717;
+  opacity: 1;
+  font-size: 1em;
+  font-weight: 900;
+}
+#contacts .location .block span:not(:last-child):after {
+  content: ', ';
+}
+#contacts .block {
+  display: block;
+}
+#references .item {
+  width: 45%;
+  float: left;
+  padding-right: 10%;
+}
+#references .item:nth-child(2n) {
+  padding: 0;
+}
+#references .reference {
+  font-style: normal;
+  font-size: 0.7em;
+  margin: 10px 0;
+  font-style: italic;
+}
+#references .name {
+  font-weight: 900;
+  font-size: 0.8em;
+}
+/* Smartphones (portrait) ----------- */
+@media (max-width: 599px) and (not print) {
+  body {
+    margin: 30px 0 40px;
+  }
+  #resume {
+    padding: 0 35px;
+  }
+  #resume > section {
+    margin-top: 50px;
+  }
+  .summary {
+    margin-bottom: 40px;
+  }
+  section {
+    margin-bottom: 0;
+  }
+  section > h3 {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  section > section, #references .item {
+    width: 100%;
+    flex: none;
+    padding: 0;
+  }
+  section > .item:last-child, section.item:last-child {
+    margin-bottom: 0;
+  }
+  #contacts {
+    margin-left: 0;
+  }
+  #languages .item, #profiles .item {
+    width: 50%;
+  }
+}
+
+
+
+@media print {
+  body {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  #resume {
+      width: 85%;
+      margin: 1cm auto;
+      padding: 0;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      line-height: 1.3;
+      font-family: Arial, Georgia, "Lucida Grande", sans-serif;
+  }
+  .summary {
+    margin: 0.2cm 0 0.9cm 0;
+  }
+  #profiles {
+    display: none;
+  }
+  #resume > section {
+    margin: 0;
+  }
+  section > section {
+    margin: 0;
+  }
+  #skills .level {
+    line-height: 1.5em;
+  }
+  #skills .name {
+    float: left;
+    margin-right: 0.5cm;
+  }
+  #skills .keywords {
+    margin-top: 0.1cm;
+  }
+  section#interests {
+    margin-top: 1cm;
+    margin-bottom: 1.2cm;
+  }
+  #contacts {
+    width: 75%;
+    float: right;
+  }
+  p {
+    opacity: 1;
+  }
+}
+
+@page {
+  margin: 1cm 1.4cm;
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<div id="resume">
+			<h1>Colleen Venhuis</h1>
+			<h2>Software Developer</h2>
+		  <div class="summary">
+		    <p>I am a fresh University of Alberta graduate seeking employment within Canada in the computing science industry! Some of the industries I&#x27;m interested in include startup companies, mobile &amp; web applications, and video game development. User Interfaces are the most interesting aspect for me, as I like finding new ways for people to communicate with technology.</p>
+		  </div>
+    <section id="education">
+    	<h3>Education</h3>
+    	<section class="item">
+        <div class="row">
+          <div class="institution">
+            University of Alberta
+          </div>
+          <div class="date">
+            <span class="startDate">
+              September 2012
+            </span>
+            <span class="endDate">
+              - April 2018
+            </span>
+          </div>
+        </div>
+        <div class="row education-sub-info">
+          <span class="area">
+            Computing Science with Mathematics minor
+          </span>
+          <span class="studyType">
+            Bachelor of Science
+          </span>
+        </div>
+    		<ul class="courses">
+    			<li>Introduction to Software Engineering</li>
+    			<li>Introduction to File and Database Management</li>
+    			<li>Computer Organization and Architecture I</li>
+    			<li>Advanced Games Programming</li>
+    			<li>Computer Networks</li>
+    			<li>Operating System Concepts</li>
+    			<li>Introduction to the Foundations of Computation I &amp; II</li>
+    			<li>Introduction to Digital Image Processing</li>
+    			<li>Elementary &amp; Intermediate Calculus I &amp; II</li>
+    			<li>Linear Algebra I</li>
+    			<li>Introduction to Statistics</li>
+    			<li>Introduction to Discrete Mathematics</li>
+    			<li>Introduction to Ring Theory</li>
+    			<li>Graph Theory</li>
+    			<li>Elementary Number Theory</li>
+    			<li>Geometry</li>
+    			<li>Projective and Inversive Geometries</li>
+    			<li>Intermediate &amp; Advanced German I &amp; II</li>
+    		</ul>
+    	</section>
+    </section>
+		<section id="work">
+			<h3>Work</h3>
+		  <section>
+		    <div class="item">
+		      <div class="row">
+		        <div class="name">
+		          University of Alberta
+		        </div>
+		        <div class="date">
+		          <span class="startDate">
+		            September 2017
+		          </span>
+		          <span class="endDate">
+		            - December 2017
+		          </span>
+		        </div>
+		      </div>
+		      <div class="position">
+		        Teaching Assistant
+		      </div>
+		      <div class="summary">
+		        <p>Lab TA for CMPUT 174: Introduction to the Foundations of Computation I. This role was very enjoyable and allowed for great personal growth. Working with students taught me more about how others think and approach the same problem with different viable solutions.</p>
+		      </div>
+		      <h5>Responsibilities:</h5>
+		      <ul class="highlights">
+		        <li>Facilitated and supervised labs as students worked on lab assignments</li>
+		        <li>Provided advice and feedback on the basics of game design in python</li>
+		        <li>Evaluated group assignment demonstrations and graded results</li>
+		        <li>Proctored class examinations</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="row">
+		        <div class="name">
+		          University of Alberta
+		        </div>
+		        <div class="date">
+		          <span class="startDate">
+		            July 2017
+		          </span>
+		          <span class="endDate">
+		            - September 2017
+		          </span>
+		        </div>
+		      </div>
+		      <div class="position">
+		        Software Design and Architecture Subject Expert
+		      </div>
+		      <div class="summary">
+		        <p>Worked under a professor to help produce a series of online Software Design and Architecture courses on Coursera. I was given the chance to work closely with a coworker, learn the value of pair programming, and the challenges of finishing a project.</p>
+		      </div>
+		      <h5>Responsibilities:</h5>
+		      <ul class="highlights">
+		        <li>Developed base Android Studio application code for tutorials and assignments</li>
+		        <li>Designed assignment guidelines, example UML diagrams, and marking schemes</li>
+		        <li>Uploaded and formatted assignments to Coursera&#x27;s platform for review and publication</li>
+		        <li>Addressed course beta tester comments and concerns</li>
+		      </ul>
+		    </div>
+		  </section>
+		</section>
+		<section id="volunteer">
+			<h3>Volunteer</h3>
+		  <section>
+		    <div class="item">
+		      <div class="row">
+		        <div class="name">
+		          Ada&#x27;s Team
+		        </div>
+		        <div class="date">
+		          <span class="startDate">
+		            May 2017
+		          </span>
+		          <span class="endDate">
+		            - April 2018
+		          </span>
+		        </div>
+		      </div>
+		      <div class="website">
+		        <a href="http://www.adasteam.ca/">http://www.adasteam.ca/</a>
+		      </div>
+		      <div class="position">
+		        President and Vice President
+		      </div>
+		      <div class="summary">
+		        <p>Ada&#x27;s Team promotes diversity and inclusion in the Department of Computing Science. They host numerous events, attend conferences, and provide many resources for students regardless of their background. As Vice President and later President of Ada&#x27;s Team, I strove to make sure all these opportunities were available to everyone and ensured my team was able to grow and communicate together.</p>
+		      </div>
+		      <h5>Responsibilities:</h5>
+		      <ul class="highlights">
+		        <li>Acted as lead chair of executive and general meetings</li>
+		        <li>Communicated with the Computing Science Department and peer student groups</li>
+		        <li>Priorotized tasks and managed team workload</li>
+		        <li>Organized and promoted student, faculty, and industry related events</li>
+		        <li>Managed website blog and social media pages</li>
+		        <li>Hosted monthly Coffee &amp;&amp; Code events</li>
+		        <li>Hosted and lead science activities introducing 3D Modelling using TinkerCad</li>
+		        <li>Hosted WISEST Summer Lunches for high school students</li>
+		        <li>Held office hours in Ada&#x27;s Base for peer networking and tutoring</li>
+		        <li>Encouraged growth and provided a welcoming environment in the Computing Science Department</li>
+		      </ul>
+		    </div>
+		  </section>
+		</section>
+		<section id="awards">
+			<h3>Awards</h3>
+		  <section>
+		    <div class="item">
+		      <div class="row">
+		        <div class="date">
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		</section>
+		<section id="publications">
+			<h3>Publications</h3>
+		  <section>
+		    <div class="item">
+		      <div class="row">
+		        <div class="date">
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		</section>
+		<section id="skills">
+			<h3>Skills</h3>
+		  <section>
+		    <div class="item">
+		      <div class="name">
+		        Programming Languages
+		      </div>
+		      <div class="level">
+		        <em>Intermediate</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>Python</li>
+		        <li>Java</li>
+		        <li>C++</li>
+		        <li>C</li>
+		        <li>MIPS Assembly</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        Databases
+		      </div>
+		      <div class="level">
+		        <em>Beginner</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>MySQL</li>
+		        <li>SQLLite</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        Windows Related Technologies
+		      </div>
+		      <div class="level">
+		        <em>Intermediate</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>Android Studio</li>
+		        <li>GitHub Desktop App</li>
+		        <li>Windows PowerShell</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        Linux Related Technologies
+		      </div>
+		      <div class="level">
+		        <em>Intermediate</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>Ubuntu</li>
+		        <li>git</li>
+		        <li>bash</li>
+		      </ul>
+		    </div>
+		    <div class="item">
+		      <div class="name">
+		        Other Technologies
+		      </div>
+		      <div class="level">
+		        <em>Beginner</em>
+		      </div>
+		      <ul class="keywords">
+		        <li>TinkerCad</li>
+		        <li>Node.js</li>
+		        <li>NumPy</li>
+		        <li>MatPlotLib</li>
+		        <li>OpenCV</li>
+		      </ul>
+		    </div>
+		  </section>
+		</section>
+		<section id="languages">
+			<h3>Languages</h3>
+		  <section>
+		    <div class="item">
+		      <div class="language">
+		        English
+		      </div>
+		      <div class="fluency">
+		        <em>Native</em>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <div class="language">
+		        German
+		      </div>
+		      <div class="fluency">
+		        <em>Elementary</em>
+		      </div>
+		    </div>
+		  </section>
+		</section>
+		<section id="interests">
+			<h3>Interests</h3>
+		  <section>
+		      <div class="name">
+		        User Interfaces
+		      </div>
+		      <div class="name">
+		        Astronomy
+		      </div>
+		      <div class="name">
+		        Games
+		      </div>
+		      <div class="name">
+		        Swimming
+		      </div>
+		  </section>
+		</section>
+		<section id="references">
+			<h3>References</h3>
+		  <section>
+		    <div class="item">
+		    </div>
+		  </section>
+		</section>
+    <section id="profiles">
+    	<h3>Profiles</h3>
+      <section>
+        <div class="item">
+          <div class="network">
+            LinkedIn
+          </div>
+          <div class="url">
+            <a href="https://www.linkedin.com/in/colleen-venhuis/">Colleen Venhuis</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="network">
+            GitHub
+          </div>
+          <div class="url">
+            <a href="https://github.com/cjvenhuis">cjvenhuis</a>
+          </div>
+        </div>
+      </section>
+    </section>
+		<section id="contacts">
+		  <div class="location item">
+		    <div class="block">
+		      
+		      <span class="city">Edmonton</span>
+		      
+		    </div>
+		    <div class="block">
+		      
+		    </div>
+		  </div>
+		
+		  <div class="contacts item">
+		    <div class="block">
+		      <span class="email">venhuis@ualberta.ca</span>
+		    </div>
+		    <div class="block">
+		      
+		    </div>
+		  </div>
+		
+		  <div class="site item">
+		    <div class="block">
+		      
+		    </div>
+		  </div>
+		</section>
+	</body>
+</html>
